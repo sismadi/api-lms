@@ -1,14 +1,14 @@
-name = "mooc-api"
+name = "lms-api"
 main = "worker.js"
 compatibility_date = "2026-09-01"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "mooc-db"
-database_id = "96730385-bbd3-4eab-8264-73f591024b36"
+database_name = "lms-db"
+database_id = "688a48e3-79e2-433f-93d2-3e4150bed1f1"
 
 [vars]
-RESEND_FROM = "MOOC IPWIJA <no-reply@sismadi.com>"
+RESEND_FROM = "LMS IPWIJA <no-reply@piawai.id>"
 # APP_ORIGIN dipakai untuk membangun tautan reset password di email.
 # GANTI ke origin production frontend Anda.
 APP_ORIGIN = "https://lms.piawai.id"
