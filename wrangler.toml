@@ -9,3 +9,16 @@ database_id = "96730385-bbd3-4eab-8264-73f591024b36"
 
 [vars]
 RESEND_FROM = "MOOC IPWIJA <no-reply@sismadi.com>"
+# APP_ORIGIN dipakai untuk membangun tautan reset password di email.
+# GANTI ke origin production frontend Anda.
+APP_ORIGIN = "https://lms.piawai.id"
+# ALLOWED_ORIGINS boleh ditambahkan di sini (dipisah koma) kalau origin
+# frontend berbeda dari default di worker.js, mis.:
+# ALLOWED_ORIGINS = "https://lms.piawai.id,http://localhost:8080"
+
+# Secret WAJIB di-set lewat CLI, JANGAN pernah ditulis di file ini:
+#   wrangler secret put SESSION_SECRET
+#   wrangler secret put RESEND_API_KEY      (opsional — tanpa ini, tautan
+#                                             reset password tidak terkirim
+#                                             lewat email, tapi alur tetap
+#                                             berhasil dibuat di server)
