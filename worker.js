@@ -50,7 +50,7 @@ const ROLES = new Set(['peserta', 'dosen', 'admin']);
 
 const DEFAULT_ORIGINS = [
   'https://lms.piawai.id',
-  'https://mooc-app-main.pages.dev',
+  'https://lms.piawai.pages.dev',
   'http://localhost:8080',
   'http://127.0.0.1:8080',
 ];
